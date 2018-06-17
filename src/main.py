@@ -4,11 +4,12 @@ from weather_app_package import http_request as req
 
 
 def main():
-    pr = pc.printing('weather app')
+    pr = pc.Printing('weather app')
     pr.print_header()
-    lc = loc.location(35100)
+    lc = loc.Location(35100)
     lc()
-    r = req.http_req(lc.zip_code)
+    print(lc)
+    r = req.HttpReq(lc.zip_code)
     r()
 
 

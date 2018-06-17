@@ -1,7 +1,7 @@
-class printing:
+class Printing:
 
-    def __init__(self,header):
-        self.header ='\t' + header.upper()
+    def __init__(self, header):
+        self.header = '\t' + header.upper()
 
     def print_header(self):
         print('------------------------')

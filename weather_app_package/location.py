@@ -1,5 +1,5 @@
 
-class location:
+class Location:
     """
     A class containing location data for our weather forecast
     """
@@ -7,4 +7,7 @@ class location:
         self.zip_code = zip_code
 
     def __call__(self, *args, **kwargs):
-        print("ZIP CODE : %s" %self.zip_code)
+        print(f'ZIP CODE : {self.zip_code}')
+
+    def __str__(self):
+        return f'ZIP CODE : {self.zip_code}'
